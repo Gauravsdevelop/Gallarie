@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); */
+
+@import url('./Colors.css');
+
+body, h1, h2, h3, h4, h5, h6 , p {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Press Start 2P',cursive;
+}
+
+body {
+background-color: var(--light-brown);
+position: relative;
+min-height: cal(100vh - 5rem);
+padding-bottom: 5rem;
+display: inline-block;
+width: 100%;
+}
+
+nav {
+  background-color: var(--light);
+}
+
+
+ nav .title {  
+    padding: 0.75rem;
+    padding-left: 0px;
+    color: var(--orange);
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav .logo {
+height: 1.75rem ;
+margin-left: 0.75rem;
+}
+
+nav form{
+    display: inline;
+    float: right;
+    padding-top: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+nav .search {
+    font-family: 'Press Start 2P',cursive;
+    padding: 0.25rem 0.75rem;
+}
+
+nav .search:focus {
+    outline: none !important;
+    border: 1px solid var(--orange);
+}
+
+.heading{
+    text-align: center;
+    margin: 1.75rem;
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    background-color: var(--light);
+    width: calc(100% - 1.5rem);
+    padding: 0.75rem;
+    display: flex;   
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+@media screen and (max-width : 830px ) {
+    
+    footer h1 {
+        display: none;
+    }
+    footer {
+        flex-direction: column;
+        gap: 0.75rem;
+        text-align: center;
+    }
+    body{
+        min-height: calc(100vh - 10rem);
+        padding-bottom: 10rem !important;
+
+    }
+}
+
+@media screen and (max-width : 750px ) {
+
+    nam {
+     display: inline-block;
+     width: 100%;
+     
+    }
+    nav form {
+        float: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+        margin-bottom: 0.75rem;
+
+    }
+
+}
