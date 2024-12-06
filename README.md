@@ -1,6 +1,9 @@
 
 # Gallarie - A photo Search App
 
+## Hosted URL 
+- https://gaurav-gallarie.netlify.app/
+
 ## Language Used
 
 - Html
